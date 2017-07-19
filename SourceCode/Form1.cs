@@ -15,9 +15,6 @@ namespace QuikCapture
         public Form1()
         {
             InitializeComponent();
-            DirectoryInfo LocalDirectory = Directory.CreateDirectory(string.Format((saveScreenshotPath.Text + @"\\{0}-{1}-{2}-{3}-{4}"), DateTime.Now.Day, DateTime.Now.Month, DateTime.Now.Year, DateTime.Now.Hour, DateTime.Now.Minute));
-            saveDirectory = LocalDirectory.FullName;
-
             keyHandler = new PrintScreenKeyHandler(Keys.PrintScreen, this);
             keyHandler.Register();
         }
@@ -40,6 +37,10 @@ namespace QuikCapture
         {
             enableQuickCapture.Enabled = false;
             disableQuickCapture.Enabled = true;
+            
+            DirectoryInfo LocalDirectory = Directory.CreateDirectory(string.Format((saveScreenshotPath.Text + @"\\{0}-{1}-{2}-{3}-{4}"), DateTime.Now.Day, DateTime.Now.Month, DateTime.Now.Year, DateTime.Now.Hour, DateTime.Now.Minute));
+            saveDirectory = LocalDirectory.FullName;
+            
             captureFullScreen();
         }
 
