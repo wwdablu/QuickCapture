@@ -5,7 +5,7 @@ The application requires .NET Framework 4.5 and above to run. It has been develo
 
 **How do I use it? :confused:**
 
-Just run the application and speicy the path in which you would want to save the screenshot image files. It will perform a fullscreen screenshot, that is the entire desktop. Once the path is provided, click on the enable button.
+Just run the application and specify the path in which you would want to save the screenshot image files. It will perform a fullscreen screenshot, that is the entire desktop. Once the path is provided, click on the enable button.
 
 When you want to take screenshot, just press the 'PrntScrn' button and it will automatically save the screenshot as JPG in the path specified with a folder named as today's date and the time during which the application was launched.
 
