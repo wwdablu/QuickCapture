@@ -6,7 +6,7 @@ using System.IO;
 
 namespace QuickCapture
 {
-    public partial class Form1 : Form
+    public partial class QCForm : Form
     {
         private String saveDirectory = "";
         private int saveCounter = 0;
